@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- daisyUI + Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: 'Inter', sans-serif;
+            font-family: 'Work Sans', sans-serif;
+            background-color: rgb(250, 162, 162);
+
+
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="Accordian">
+         <!-- Accordian -->
+
+    <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" checked="checked" /> 
+        <div class="collapse-title text-xl font-medium">
+            Discuss the scope of var, let, and const
+        </div>
+        <div class="collapse-content"> 
+          <p>var, let, and const are used for variable declaration, each with its own scope and behavior. var is function-scoped and hoisted to the top of its containing function or global scope, allowing both reassignment and redefinition. let, on the other hand, is block-scoped, not hoisted, and permits variable reassignment but not redefinition within the same block. Finally, const is also block-scoped and not hoisted, and it implies immutability for the variable itself (meaning it cannot be reassigned), though the value it holds may be mutable for objects and arrays. In modern JavaScript, const is often preferred for variables that should remain constant, while let is used when reassignment is needed, and var is seldom used due to its function scope and less predictable behavior.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" /> 
+        <div class="collapse-title text-xl font-medium">
+            Tell us the use cases of null and undefined
+        </div>
+        <div class="collapse-content"> 
+          <p>null and undefined are used to represent different concepts. undefined typically arises when a variable has been declared but hasn't been assigned a value, or when a function parameter lacks an argument. It's often employed to indicate the absence of a value or missing data. On the other hand, null is deliberately assigned to variables or object properties to indicate that they intentionally have no value or are empty. You might use undefined when checking for uninitialized variables or missing data, while null is often used when you want to explicitly signify that something is intentionally empty or when you need to reset a variable or property to an empty state. It's important to understand their distinctions and choose the one that best fits the semantics of your code. Additionally, when comparing values, consider using strict equality (===) to differentiate between null and undefined, as they are not equal by default.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" /> 
+        <div class="collapse-title text-xl font-medium">
+            What do you mean by REST API?
+        </div>
+        <div class="collapse-content"> 
+          <p>A REST API, or Representational State Transfer Application Programming Interface, is a standardized architectural style for designing web services and interactions between software applications over the internet. At its core, REST relies on the principles of statelessness, which means that each client-server interaction is independent, with no session state stored on the server between requests. Resources, such as data objects or services, are identified by unique URLs and manipulated using standard HTTP methods like GET (for retrieval), POST (for creation), PUT (for update), and DELETE (for removal). These resources can be represented in various formats, such as JSON or XML. RESTful APIs promote a uniform interface, making it easier for developers to understand and work with different APIs, and they are commonly used in web development for tasks like data retrieval, updating server-side resources, and enabling communication between various components or systems. REST APIs have gained popularity due to their simplicity, scalability, and compatibility with web technologies, making them a foundational concept in modern web development and integration.</p>
+        </div>
+      
+    </div>
+
+
+   
+    </div>
+
+</body>
+</html>

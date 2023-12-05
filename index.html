@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- daisyUI + Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .sort-button {
+            background-color: #b3a5a5;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 1rem;
+        }
+
+        .sort-button:hover {
+            background-color: #555;
+            color: #fff;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 mt-5 px-12 mx-auto">
+        <div class="navbar-start">
+            <img src="./images/Logo.png" alt="">
+        </div>
+        <div class="navbar-center">
+            <button class="sort-button" onclick="toggleSortByViews()">Sort by view</button>
+        </div>
+        <div class="navbar-end">
+            <a href="blog.html" class="btn btn-ghost normal-case font-medium text-lg bg-[#FF1F3D] text-white">Blog</a>
+        </div>
+    </div>
+
+    <div class="flex flex-col w-full px-12">
+        <div class="divider"></div>
+    </div>
+
+    <!-- buttons -->
+    <div class="buttons grid gap-2 md:grid-cols-2 lg:grid-cols-4 w-1/2 mx-auto" id="btn-container">
+        
+    </div>
+
+    <!-- Cards -->
+    <div class="Cards mt-10 mb-10 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 px-12" id="card-container">
+        
+    </div>
+
+    <!-- No data section -->
+    <section id="video-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto mb-28">
+        <div class="grid grid-cols-1 col-span-4 justify-center items-center">
+            <figure class="">
+                <img id="img-no-data" class="mx-auto" src="./images/Icon.png" alt="">
+                <figcaption>
+                    <h1 class="text-2xl text-center font-bold mt-4">Oops!! Sorry, There is no content here</h1>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
